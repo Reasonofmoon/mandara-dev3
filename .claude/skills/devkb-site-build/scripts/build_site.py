@@ -53,6 +53,11 @@ def collect(devkb: Path):
         else:
             skipped.append(f"MISSING reference file: {fname}")
     counts["references"] = n
+    # 정렬: 카테고리는 해결 파이프라인 순서, 번호는 숫자 기준 (PB-CL-010은 10으로 취급)
+    cat_order = {"clarify": 0, "reproduce": 1, "diagnose": 2, "patch": 3, "verify": 4}
+    def pnum(pid):
+        return int(re.search(r"(\d+)$", pid).group(1))
+    prompts.sort(key=lambda p: (cat_order.get(p["cat"], 9), pnum(p["id"])))
     return content, prompts, counts, skipped, html
 
 INJECT_CSS = """
