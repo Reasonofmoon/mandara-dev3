@@ -11,3 +11,5 @@
 | 2026-07-05 | 배포 대상을 Reasonofmoon/mandara-dev3로 변경 | skills/devkb-deploy | 사용자 지정 저장소 |
 | 2026-07-05 | 원본 뷰어 JS 버그(color:var) 자동 수리 단계 추가 | skills/devkb-site-build | 스크립트 파싱 실패 발견 |
 | 2026-07-05 | 배포 폴백 경로(Mac gh CLI) 문서화 | skills/devkb-deploy | GitHub MCP 토큰 만료 |
+| 2026-07-05 | 프롬프트 블록 44개 실콘텐츠 작성 (에이전트 5 팬아웃) | devkb/04-prompts | 스텁(보일러플레이트) 발견 피드백 |
+| 2026-07-05 | 프롬프트 정렬(숫자·파이프라인 순) 수정 | skills/devkb-site-build | 010이 02 앞에 오는 정렬 버그 |
