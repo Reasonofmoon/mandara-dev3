@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "patterns": 30,
+    "errors": 80,
+    "flows": 25,
+    "prompts": 45,
+    "references": 6
+  },
+  "content_items": 186,
+  "skipped": []
+}
